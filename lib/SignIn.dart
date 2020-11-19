@@ -98,6 +98,7 @@ class SignInState extends State<SignIn> {
                           Container(
                             margin: EdgeInsets.only(left: width*10/100,right: width*10/100),
                             child: TextFormField(
+                                obscureText:true,
                               onSaved: (val){this.pass=val;},
                               validator: (value) {
                                 if (value.isEmpty) {
