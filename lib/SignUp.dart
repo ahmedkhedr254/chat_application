@@ -79,7 +79,7 @@ class SignUpState extends State<SignUp> {
                             height: height * 2 / 100,
                           ),
                           Text(
-                            "Log In",
+                            "Sign Up",
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
                               color: Color(0xff0059b3),
@@ -110,6 +110,8 @@ class SignUpState extends State<SignUp> {
                           Container(
                             margin: EdgeInsets.only(left: width*10/100,right: width*10/100),
                             child: TextFormField(
+
+                                obscureText: true,
                               onSaved: (val){this.pass=val;},
                               validator: (value) {
                                 if (value.isEmpty) {
@@ -181,7 +183,7 @@ class SignUpState extends State<SignUp> {
                             child: FlatButton(
                               color:Color(0xff0059b3) ,
                               shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
-                              child: Container(padding:EdgeInsets.all(5),child:Text("sign in",style: TextStyle(fontSize: width*8/100,color:Colors.white ),)),
+                              child: Container(padding:EdgeInsets.all(5),child:Text("sign Up",style: TextStyle(fontSize: width*8/100,color:Colors.white ),)),
                               onPressed: ()async{
                                 if(_formKey.currentState.validate()){
                                   print("signed in");
