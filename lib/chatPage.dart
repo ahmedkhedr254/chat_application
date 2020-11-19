@@ -42,14 +42,7 @@ class chatPageState extends State<chatPage> {
   int _page = 0;
   GlobalKey _bottomNavigationKey = GlobalKey();
   List<String> onlineUsers = [
-    "ahmed",
-    "ahmed",
-    "ahmed",
-    "ahmed",
-    "ahmed",
-    "ahmed",
-    "ahmed",
-    "ahmed"
+
   ];
   List<String> chatHistoryList = [
     "ahmed",
@@ -522,7 +515,7 @@ class chatPageState extends State<chatPage> {
                                       border: new OutlineInputBorder(
                                           borderSide: new BorderSide(
                                               color: Colors.teal)),
-                                      hintText: 'Tell us about yourself',
+                                      hintText: 'write email here',
                                       labelText: 'search user',
                                       prefixIcon: const Icon(
                                         Icons.search,
